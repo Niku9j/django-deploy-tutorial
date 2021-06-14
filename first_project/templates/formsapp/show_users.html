@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registered Users</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>List of Registered users</h1>
+    {% if users %}
+    <table>
+        <thead>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email ID</th>
+        </thead>
+
+        {% endif %} {% for user in users%}
+        <tr>
+            <td>{{user.fname}}</td>
+            <td>{{user.lname}}</td>
+            <td>{{user.email}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+
+</html>
