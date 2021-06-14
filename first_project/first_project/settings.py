@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     "formsapp",
     "basic_app",
     "login_app",
+    "adv_app",
 ]
 
 MIDDLEWARE = [
